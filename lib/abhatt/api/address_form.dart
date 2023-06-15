@@ -1,9 +1,6 @@
 import 'dart:io';
-
 import 'package:flutter/material.dart';
-
 import 'input_field.dart';
-import 'model/location.dart';
 import 'route_wrapper.dart';
 
 class AddressForm extends StatefulWidget {
@@ -49,7 +46,6 @@ class AddressFormState extends State<AddressForm> {
   late final TextEditingController _secondaryAddressController;
   late final TextEditingController _zipController;
   late final TextEditingController _cityController;
-  Location? location;
 
   late Widget child;
   late FocusNode addressNode;
@@ -181,7 +177,7 @@ class AddressFormState extends State<AddressForm> {
               };
 
               writeJSON(map.toString());
-           
+
             },
           ),
         )

@@ -1,9 +1,6 @@
 import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:uuid/uuid.dart';
-
-import 'address_form.dart';
-import 'model/location.dart';
 import 'model/prediction.dart';
 import 'places_service.dart';
 
